@@ -1,0 +1,7 @@
+*~
+*.bak
+*.orig
+*.cache
+Numix
+Numix-Circle
+*.tar.gz
