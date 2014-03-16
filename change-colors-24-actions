@@ -1,0 +1,9 @@
+#!/bin/bash
+cd 24/actions
+
+#COLOR SCHEME BASE
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/aaa/979797/g'
+
+#SOME FIX (for the test on "paste" icons)
+#opacity from 0.2   to 0.45
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/opacity:.2/opacity:.45/g'

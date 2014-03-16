@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#fix gnome-split
+sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-split.png/Icon=gnome-split/g' /usr/share/applications/gnome-split.desktop
+
+#fix gprename
+sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gprename\/gprename.png/Icon=gprename/g' /usr/share/applications/gprename.desktop
+
+#fix deborphan
+sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gtkorphan.png/Icon=gtkorphan/g' /usr/share/applications/gtkorphan.desktop
+
+
+
+#fix xbmc
+cd xbmc
+sudo cp icon* /usr/share/xbmc/media/
+
+#fix google-musicmanager
+sudo cp google-musicmanager.png /usr/share/icons/hicolor/16x16/apps/google-musicmanager.png
+sudo cp google-musicmanager.png /usr/share/icons/hicolor/32x32/apps/google-musicmanager.png
+sudo cp google-musicmanager.png /usr/share/icons/hicolor/48x48/apps/google-musicmanager.png
+sudo cp google-musicmanager.png /usr/share/icons/hicolor/128x128/apps/google-musicmanager.png
+
+
