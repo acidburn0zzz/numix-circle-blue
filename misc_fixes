@@ -9,6 +9,8 @@ sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gprename\/gprename.png/Icon=gprename/
 #fix deborphan
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gtkorphan.png/Icon=gtkorphan/g' /usr/share/applications/gtkorphan.desktop
 
+#fix qt4-fsarchiver
+sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver.desktop
 
 
 #fix xbmc
