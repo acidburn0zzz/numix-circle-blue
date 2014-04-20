@@ -3,6 +3,9 @@
 #fix gnome-split
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gnome-split.png/Icon=gnome-split/g' /usr/share/applications/gnome-split.desktop
 
+#fix gtk-splitter
+sudo sed -i 's/Icon=gtk-splitter.png/gtk-splitter/g'  /usr/share/applications/gtk-splitter.desktop
+
 #fix gprename
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gprename\/gprename.png/Icon=gprename/g' /usr/share/applications/gprename.desktop
 
@@ -11,11 +14,7 @@ sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gtkorphan.png/Icon=gtkorphan/g' /usr/
 
 #fix qt4-fsarchiver
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver.desktop
-
-
-#fix xbmc
-cd xbmc
-sudo cp icon* /usr/share/xbmc/media/
+sudo sed -i 's/Icon=\/usr\/share\/app-install\/icons\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver.desktop
 
 #fix google-musicmanager
 sudo cp google-musicmanager.png /usr/share/icons/hicolor/16x16/apps/google-musicmanager.png
@@ -24,3 +23,6 @@ sudo cp google-musicmanager.png /usr/share/icons/hicolor/48x48/apps/google-music
 sudo cp google-musicmanager.png /usr/share/icons/hicolor/128x128/apps/google-musicmanager.png
 
 
+#fix xbmc
+cd xbmc
+sudo cp icon* /usr/share/xbmc/media/
