@@ -14,7 +14,10 @@ sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/gtkorphan.png/Icon=gtkorphan/g' /usr/
 
 #fix qt4-fsarchiver
 sudo sed -i 's/Icon=\/usr\/share\/pixmaps\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver.desktop
-sudo sed -i 's/Icon=\/usr\/share\/app-install\/icons\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver.desktop
+sudo sed -i 's/Icon=\/usr\/share\/app-install\/icons\/harddrive.png/Icon=qt4-fsarchiver/g' /usr/share/applications/qt4-fsarchiver
+
+# fix pyrenamer
+sudo sed -i 's/\/usr\/share\/pyrenamer\/pyrenamer.png/pyrenamer/g' /usr/share/applications/pyrenamer.desktop
 
 #fix google-musicmanager
 sudo cp google-musicmanager.png /usr/share/icons/hicolor/16x16/apps/google-musicmanager.png
@@ -26,3 +29,4 @@ sudo cp google-musicmanager.png /usr/share/icons/hicolor/128x128/apps/google-mus
 #fix xbmc
 cd xbmc
 sudo cp icon* /usr/share/xbmc/media/
+
