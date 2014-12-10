@@ -1,7 +1,7 @@
 #!/bin/bash
-#########################################################################
-########COLOR SCHEME FOR FOLDERS and some misc icons
-#########################################################################
+################################################################################
+################COLOR SCHEME FOR FOLDERS and some misc icons####################
+################################################################################
 
 #  -not -type l   stand for  exclude symbolic links
 # -print0 mette tutto in una unica riga per xargs che invierà a sed
