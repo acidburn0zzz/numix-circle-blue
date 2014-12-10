@@ -1,0 +1,32 @@
+#!/bin/bash
+################################################################################
+################COLOR SCHEME FOR FOLDERS and some misc icons####################
+################################################################################
+################  from numix solarized to anything else  #######################
+################################################################################
+
+#  -not -type l   stand for  exclude symbolic links
+# -print0 mette tutto in una unica riga per xargs che invierà a sed
+
+#NEWCOLOR=
+newdarkcolor=829fa9
+newlightcolor=aad0de
+trashemptydark=999999
+trashemptylight=ababab
+
+cp Numix-Circle-Solarized Numix-Circle-NEWCOLOR
+
+cd Numix-Circle-NEWCOLOR
+
+#Dark Base
+#829fa9    with $newdarkcolor
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/829fa9/$newdarkcolor/g
+
+#Light Base
+#aad0de    with $newdlightcolor
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/aad0de/$newlightcolor/g
+
+
+#trash empty
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/999999/$trashemptydark/g
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/ababab/$trashemptylight/g

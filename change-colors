@@ -1,51 +1,39 @@
 #!/bin/bash
 #########################################################################
-########COLOR SCHEME FOR FOLDERS ( + gnome-fs-loading-icon + 16 misc icons)#######
+########COLOR SCHEME FOR FOLDERS and some misc icons
 #########################################################################
 
 #  -not -type l   stand for  exclude symbolic links
 # -print0 mette tutto in una unica riga per xargs che invierà a sed
 
+
+newdarkcolor=829fa9
+newlightcolor=aad0de
+trashemptydark=999999
+trashemptylight=ababab
+
 #Dark Base
-#a77b55    with    #94b4cf
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/a77b55/94b4cf/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/9c785e/94b4cf/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/9c7a5e/94b4cf/g'
+#e9a439    with    #newdarkcolor
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/e9a439/$newdarkcolor/g
 
 
 #Light Base
-#e9b080  e  #8da9e0    with    #c9d5f6
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/8da9e0/c9d5f6/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/e9b080/c9d5f6/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/deb087/c9d5f6/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/e0b288/c9d5f6/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/b08c6b/c9d5f6/g'
+#f5c14e    with    #newlightcolor
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/f5c14e/$newlightcolor/g
 
 
 #########################################################################
 ##################COLOR SCHEME FOR THE REMAINING STUFF###################
 #########################################################################
-#d64936  e  #d64937   e   #d44735     with    #8da9e0
 
-#per le seguenti icone:
-#    start-here
-#    stock_music-library
-#    stock_smart-playlist
-#    stock_playlist
-
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/d64936/8da9e0/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/d64937/8da9e0/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/d44735/8da9e0/g'
+#distro logo
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/dc322f/$newlightcolor/g
 
 
+#trash full
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/d1533e/$newdarkcolor/g
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/f47b67/$newlightcolor/g
 
-#########################################################################
-####################COLOR SCHEME FOR  bookmark-missing#####################
-#########################################################################
-#9c751   e  #9c7721  with   #8da9e0
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/9c7721/8da9e0/g'
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i 's/9c751e/8da9e0/g'
-
-
-
-#NOTE: ci sarebbe trash che forse è troppo but who cares
+#trash empty
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/63b6d1/$trashemptydark/g
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/a2d7e9/$trashemptylight/g
