@@ -12,14 +12,19 @@ newlightcolor=aad0de
 trashemptydark=999999
 trashemptylight=ababab
 
+newembleminside=475d65
+newwhitetopfolder=f2f2f2
+
+#origin colors based on numix blue folders
+
 #Dark Base
 #e9a439    with    #newdarkcolor
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/e9a439/$newdarkcolor/g
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/1976d2/$newdarkcolor/g
 
 
 #Light Base
 #f5c14e    with    #newlightcolor
-find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/f5c14e/$newlightcolor/g
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/42a5f5/$newlightcolor/g
 
 
 #########################################################################
@@ -37,3 +42,10 @@ find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/f47b67/$newlightco
 #trash empty
 find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/63b6d1/$trashemptydark/g
 find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/a2d7e9/$trashemptylight/g
+
+
+#internal symbol
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/072a5e/$newembleminside/g
+
+#internal white
+find . -name "*.svg" -not -type l -print0 | xargs -0 sed -i s/fffdf0/$newwhitetopfolder/g

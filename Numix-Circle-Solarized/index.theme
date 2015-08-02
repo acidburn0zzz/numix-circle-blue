@@ -7,7 +7,7 @@ Inherits=Numix-Circle
 Example=directory-x-normal
 
 # Directory list
-Directories=16x16/places,22x22/places,24x24/actions,24x24/places,32x32/places,48x48/places,48x48/mimetypes,48x48/applications,64x64/places,128x128/places,128x128/applications,256x256/places,scalable/places,scalable/actions,scalable/applications
+Directories=16x16/places,22x22/places,24x24/actions,24x24/places,32x32/places,48x48/places,48x48/applications,64x64/places,128x128/places,128x128/applications,256x256/places,scalable/places,scalable/actions,scalable/applications
 
 [16x16/places]
 Context=Places
@@ -73,11 +73,6 @@ Type=scalable
 [24x24/actions]
 Context=actions
 Size=24
-Type=fixed
-
-[48x48/mimetypes]
-Context=Mimetypes
-Size=48
 Type=fixed
 
 [48x48/applications]
