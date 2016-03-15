@@ -9,7 +9,6 @@ Numix Circle Blue need:
 * [Numix](https://github.com/numixproject/numix-icon-theme)
 * [Numix-Circle](https://github.com/numixproject/numix-icon-theme-circle)
 
-This icon theme is based on Numix-Circle but I changed the folders from brown\orange to blue
-Also, actions 24x24 are the older neutral(gray) icons from an older version of Numix-Circle
-
+This icon theme is based on Numix-Circle but I changed the folders, trash and some other icons from brown\orange to blue.
+Also, the old system-control-panel icons are used
 
