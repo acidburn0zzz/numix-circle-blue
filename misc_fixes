@@ -18,6 +18,3 @@ sudo sed -i 's/Icon=\/usr\/share\/app-install\/icons\/harddrive.png/Icon=qt4-fsa
 
 # pyrenamer
 sudo sed -i 's/\/usr\/share\/pyrenamer\/pyrenamer.png/pyrenamer/g' /usr/share/applications/pyrenamer.desktop
-
-# gcolor
-sudo sed -i 's/\/usr\/share\/pixmaps\/\/gcolor2/icon.png/gcolor/g' /usr/share/applications/gcolor2.desktop
